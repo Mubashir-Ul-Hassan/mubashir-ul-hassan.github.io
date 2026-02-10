@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubashir Ul Hassan | Data Scientist & AI Researcher</title>
+    <meta name="description"
+        content="Portfolio of Mubashir Ul Hassan - Aspiring Data Scientist specializing in Machine Learning, Deep Learning, and Generative AI.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-trail" id="cursorTrail"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MUH<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#certifications" class="nav-link" data-text="Certifications">Certifications</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Research Opportunities
+            </div>
+            <div class="hero-greeting">Hello, I'm</div>
+            <h1 class="hero-name">
+                <span class="name-line">Mubashir</span>
+                <span class="name-line gradient-text">Ul Hassan</span>
+            </h1>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">I'm a </span>
+                <span id="typewriter" class="typewriter-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description">
+                AI Researcher with a focus on delivering impactful results — building intelligent
+                data-driven solutions with Machine Learning, NLP, and Generative AI.
+            </p>
+
+            <!-- Stats Counter -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>+
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span>+
+                    <span class="stat-label">Research Papers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>+
+                    <span class="stat-label">AI Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span>+
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary magnetic-btn">
+                    <span class="btn-text"><i class="fas fa-rocket"></i> View Projects</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#contact" class="btn btn-secondary magnetic-btn">
+                    <span class="btn-text"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+                </a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/mubashir-ul-hassan/" target="_blank" class="social-link"
+                    title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mubashir-Ul-Hassan" target="_blank" class="social-link" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://huggingface.co/MubashirUlHassan" target="_blank" class="social-link"
+                    title="Hugging Face"><span class="hf-emoji">🤗</span></a>
+                <a href="https://www.kaggle.com/mubashirulhassan00" target="_blank" class="social-link"
+                    title="Kaggle"><i class="fab fa-kaggle"></i></a>
+                <a href="mailto:akhtarmubashir809@gmail.com" class="social-link" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">about_me.py</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">MubashirUlHassan</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Mubashir Ul Hassan"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"AI & ML Researcher"</span>
+        <span class="code-param">self</span>.location = <span class="code-string">"Nawabshah, Pakistan"</span>
+        <span class="code-param">self</span>.education = <span class="code-string">"BS Data Science"</span>
+        <span class="code-param">self</span>.languages = [<span class="code-string">"English"</span>, <span class="code-string">"Urdu"</span>, <span class="code-string">"Sindhi"</span>]
+
+    <span class="code-keyword">def</span> <span class="code-func">expertise</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Machine Learning"</span>,
+            <span class="code-string">"Deep Learning"</span>,
+            <span class="code-string">"Natural Language Processing"</span>,
+            <span class="code-string">"Generative AI & LLMs"</span>,
+            <span class="code-string">"RAG Systems"</span>,
+            <span class="code-string">"Data Analytics"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">daily_routine</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> [<span class="code-string">"☕ Coffee"</span>, <span class="code-string">"💻 Code"</span>,
+                <span class="code-string">"🤖 Build AI"</span>, <span class="code-string">"📚 Research"</span>]</code></pre>
+                        </div>
+                    </div>
+
+                    <p class="about-paragraph">
+                        I'm an <strong>AI Researcher</strong> and <strong>Data Science</strong> student at
+                        Quaid-e-Awam University of Engineering, Sciences & Technology. With a focus on delivering
+                        impactful results, I build intelligent data-driven solutions using Machine Learning, NLP,
+                        and Generative AI.
+                    </p>
+                    <p class="about-paragraph">
+                        As the <strong>Founder & President of Data Science Society Quest (DSSQ)</strong>,
+                        I lead a student-driven AI community that organizes workshops, seminars, and hands-on
+                        learning events — fostering growth and collaboration in the AI ecosystem.
+                    </p>
+                </div>
+
+                <div class="about-cards">
+                    <div class="info-card float-card" style="--delay: 0s">
+                        <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <p>BS Data Science</p>
+                        <span class="info-detail">QUEST, 2022 - 2026</span>
+                    </div>
+                    <div class="info-card float-card" style="--delay: 0.2s">
+                        <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                        <h4>Experience</h4>
+                        <p>AI & ML Intern</p>
+                        <span class="info-detail">Applied R&D, 2+ years</span>
+                    </div>
+                    <div class="info-card float-card" style="--delay: 0.4s">
+                        <div class="info-icon"><i class="fas fa-users"></i></div>
+                        <h4>Leadership</h4>
+                        <p>Founder & President</p>
+                        <span class="info-detail">DSSQ, 2023 - 2026</span>
+                    </div>
+                    <div class="info-card float-card" style="--delay: 0.6s">
+                        <div class="info-icon"><i class="fas fa-file-alt"></i></div>
+                        <h4>Research</h4>
+                        <p>2 Papers Published</p>
+                        <span class="info-detail">Under Review, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">02.</span> Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card tilt-card">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Jan 2023 — Present
+                        </div>
+                        <h3 class="timeline-title">AI & ML Intern</h3>
+                        <h4 class="timeline-company">Applied Research & Development</h4>
+                        <ul class="timeline-details">
+                            <li>Contributing to developing and optimizing ML and GenAI systems — including RAG models,
+                                NLP pipelines, and LLM-based applications</li>
+                            <li>Hands-on experimentation, model validation, and performance tuning across diverse
+                                datasets</li>
+                            <li>Supported data pipeline optimization, reduced error rates, and deployed reliable,
+                                scalable AI solutions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Machine Learning</span>
+                            <span>RAG</span>
+                            <span>NLP</span>
+                            <span>LLMs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card tilt-card">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Nov 2025 — Present
+                        </div>
+                        <h3 class="timeline-title">Lead Developer</h3>
+                        <h4 class="timeline-company">Prompt2SQL — Final Year Project</h4>
+                        <ul class="timeline-details">
+                            <li>Led development of a natural-language-to-SQL system using local LLM reasoning, enabling
+                                users to generate structured database queries</li>
+                            <li>Optimized model prompts and preprocessing to enhance query generation with robust
+                                testing and error-handling pipelines</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>LLMs</span>
+                            <span>SQL</span>
+                            <span>Gemini</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card tilt-card">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> 2023 — 2026
+                        </div>
+                        <h3 class="timeline-title">Founder & President</h3>
+                        <h4 class="timeline-company">Data Science Society Quest (DSSQ)</h4>
+                        <ul class="timeline-details">
+                            <li>Led DSSQ to significant expansion by organizing workshops, AI bootcamps, and hands-on ML
+                                sessions</li>
+                            <li>Mentored students, collaborated with faculty and industry guests, and fostered an AI
+                                learning ecosystem</li>
+                            <li>Hosted workshops on machine learning, agentic AI, ATS-optimized CV building, and
+                                technical career development</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Leadership</span>
+                            <span>Community</span>
+                            <span>Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">03.</span> Skills & Expertise</h2>
+            <div class="skills-orbit">
+                <div class="skills-grid">
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                            <div class="skill-items">
+                                <span>Scikit-Learn</span>
+                                <span>Model Training</span>
+                                <span>Feature Engineering</span>
+                                <span>Hyperparameter Tuning</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Deep Learning</h3>
+                            <div class="skill-items">
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                                <span>CNNs</span>
+                                <span>Transformers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-language"></i>
+                            <h3>NLP</h3>
+                            <div class="skill-items">
+                                <span>BERT / DistilBERT</span>
+                                <span>Text Classification</span>
+                                <span>Sentiment Analysis</span>
+                                <span>NLTK</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-robot"></i>
+                            <h3>Generative AI</h3>
+                            <div class="skill-items">
+                                <span>LLMs</span>
+                                <span>RAG Systems</span>
+                                <span>OpenAI</span>
+                                <span>Prompt Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-chart-pie"></i>
+                            <h3>Data Analytics</h3>
+                            <div class="skill-items">
+                                <span>Power BI</span>
+                                <span>Tableau</span>
+                                <span>Pandas / NumPy</span>
+                                <span>BigQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-hex tilt-card">
+                        <div class="skill-hex-inner">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools</h3>
+                            <div class="skill-items">
+                                <span>Python / SQL</span>
+                                <span>Git & GitHub</span>
+                                <span>Hugging Face</span>
+                                <span>Gradio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">04.</span> Featured Projects</h2>
+            <div class="projects-showcase">
+
+                <!-- Project 1 - Large Card -->
+                <div class="project-card-lg tilt-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-content">
+                        <div class="project-header">
+                            <span class="project-label">Featured Project</span>
+                            <div class="project-links">
+                                <a href="https://github.com/Mubashir-Ul-Hassan/Twitter-Sentiment-Analyzer"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://huggingface.co/spaces/MubashirUlHassan/Twitter-Sentiment-Analyzer"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-emoji">🐦</div>
+                        <h3>Twitter Sentiment Analyzer</h3>
+                        <p>NLP-powered application that analyzes tweet sentiments using a fine-tuned DistilBERT
+                            transformer model. Features comprehensive text preprocessing pipeline, real-time analysis,
+                            confidence visualization, and auto-generated API endpoint.</p>
+                        <div class="project-tech-stack">
+                            <span>Python</span><span>DistilBERT</span><span>NLP</span>
+                            <span>PyTorch</span><span>Gradio</span><span>Hugging Face</span>
+                        </div>
+                        <div class="project-status live"><span class="status-dot"></span> Live on Hugging Face</div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Large Card -->
+                <div class="project-card-lg tilt-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-content">
+                        <div class="project-header">
+                            <span class="project-label">Featured Project</span>
+                            <div class="project-links">
+                                <a href="https://github.com/Mubashir-Ul-Hassan/Oral-Disease-RAG-Classifier"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://huggingface.co/spaces/MubashirUlHassan/Oral-Disease-RAG-Classifier"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-emoji">🦷</div>
+                        <h3>Oral Disease RAG Classifier</h3>
+                        <p>AI-powered medical image classifier that identifies 7 oral diseases with 99.51% accuracy
+                            using InceptionResNetV2. Features RAG-powered medicine recommendations for each diagnosis,
+                            confidence scoring, and deployed on Hugging Face with public API access.</p>
+                        <div class="project-tech-stack">
+                            <span>TensorFlow</span><span>Computer Vision</span><span>RAG</span>
+                            <span>InceptionResNetV2</span><span>Gradio</span>
+                        </div>
+                        <div class="project-status live"><span class="status-dot"></span> Live on Hugging Face</div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card-lg tilt-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-content">
+                        <div class="project-header">
+                            <span class="project-label">Final Year Project</span>
+                            <div class="project-links">
+                                <a href="https://github.com/Mubashir-Ul-Hassan" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-emoji">💬</div>
+                        <h3>Prompt2SQL</h3>
+                        <p>A natural-language-to-SQL system using local LLM reasoning through Gemini-based models.
+                            Enables users to generate structured database queries with high accuracy through optimized
+                            prompts and preprocessing pipelines.</p>
+                        <div class="project-tech-stack">
+                            <span>LLMs</span><span>Gemini</span><span>SQL</span>
+                            <span>Python</span><span>NLP</span>
+                        </div>
+                        <div class="project-status wip"><span class="status-dot"></span> In Development</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">05.</span> Certifications</h2>
+            <div class="certs-marquee">
+                <div class="certs-track">
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Associate Data Scientist</span>
+                        <small>DataCamp</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Generative AI for Business</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Machine Learning</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Power BI Data Analyst</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>GenAI App Developer</span>
+                        <small>HEC Pakistan</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>5-Day AI Agents</span>
+                        <small>Kaggle</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Oracle Cloud 2025</span>
+                        <small>Oracle</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>SQL for Data Science</span>
+                        <small>UC Davis</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Google Data Analytics</span>
+                        <small>Google</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>PySpark Analysis</span>
+                        <small>Coursera</small>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Associate Data Scientist</span>
+                        <small>DataCamp</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Generative AI for Business</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Machine Learning</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Power BI Data Analyst</span>
+                        <small>Coursera</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>GenAI App Developer</span>
+                        <small>HEC Pakistan</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>5-Day AI Agents</span>
+                        <small>Kaggle</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Oracle Cloud 2025</span>
+                        <small>Oracle</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>SQL for Data Science</span>
+                        <small>UC Davis</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>Google Data Analytics</span>
+                        <small>Google</small>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <span>PySpark Analysis</span>
+                        <small>Coursera</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-grid">
+                <div class="achievement-card tilt-card">
+                    <div class="achievement-icon">📄</div>
+                    <h4>Research Publications</h4>
+                    <p>Accepted Research Paper — Road Accident Risk Prediction (2026), Two Papers Under Review</p>
+                </div>
+                <div class="achievement-card tilt-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h4>Hacktoberfest Contributor</h4>
+                    <p>Open source contributor — Hacktoberfest 2024</p>
+                </div>
+                <div class="achievement-card tilt-card">
+                    <div class="achievement-icon">🎤</div>
+                    <h4>AI/DS Workshop Host</h4>
+                    <p>Speaker at DSSQ workshops (2023 — 2026)</p>
+                </div>
+                <div class="achievement-card tilt-card">
+                    <div class="achievement-icon">🔥</div>
+                    <h4>Top 1% Duolingo</h4>
+                    <p>Top 1% Duolingo Learner (2025)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">06.</span> Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always open to discussing research collaborations, AI projects, or opportunities
+                    in Data Science and Machine Learning. Let's build something amazing together!
+                </p>
+                <a href="mailto:akhtarmubashir809@gmail.com" class="btn btn-primary btn-large magnetic-btn">
+                    <span class="btn-text"><i class="fas fa-paper-plane"></i> Say Hello</span>
+                    <span class="btn-glow"></span>
+                </a>
+
+                <div class="contact-grid">
+                    <a href="mailto:akhtarmubashir809@gmail.com" class="contact-item tilt-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>akhtarmubashir809@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mubashir-ul-hassan/" target="_blank"
+                        class="contact-item tilt-card">
+                        <i class="fab fa-linkedin-in"></i>
+                        <h4>LinkedIn</h4>
+                        <p>mubashir-ul-hassan</p>
+                    </a>
+                    <a href="https://github.com/Mubashir-Ul-Hassan" target="_blank" class="contact-item tilt-card">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>Mubashir-Ul-Hassan</p>
+                    </a>
+                    <a href="https://www.kaggle.com/mubashirulhassan00" target="_blank" class="contact-item tilt-card">
+                        <i class="fab fa-kaggle"></i>
+                        <h4>Kaggle</h4>
+                        <p>mubashirulhassan00</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>MUH<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Designed & Built with ❤️ by Mubashir Ul Hassan</p>
+                <p class="footer-sub">© 2026 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
